@@ -1,7 +1,7 @@
 !function(t){function e(r){if(s[r])return s[r].exports;var n=s[r]={exports:{},id:r,loaded:!1};return t[r].call(n.exports,n,n.exports,e),n.loaded=!0,n.exports}var s={};return e.m=t,e.c=s,e.p="",e(0)}([/*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
-function(t,e,s){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}Object.defineProperty(e,"__esModule",{value:!0});var n=s(/*! url */5),o=r(n),h=o.default.parse(window.location.href,!0,!0);history.replaceState({},"dis course","/"),console.log("email address",h.q.email),e.default="index"},/*!*********************************!*\
+function(t,e,s){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}Object.defineProperty(e,"__esModule",{value:!0});var n=s(/*! url */5),o=r(n),h=o.default.parse(window.location.href,!0,!0);history.replaceState({},"dis course","/"),console.log("something works",h),console.log("email address",h.query.email),e.default="index"},/*!*********************************!*\
   !*** ./~/querystring/decode.js ***!
   \*********************************/
 function(t,e){"use strict";function s(t,e){return Object.prototype.hasOwnProperty.call(t,e)}t.exports=function(t,e,r,n){e=e||"&",r=r||"=";var o={};if("string"!=typeof t||0===t.length)return o;var h=/\+/g;t=t.split(e);var a=1e3;n&&"number"==typeof n.maxKeys&&(a=n.maxKeys);var i=t.length;a>0&&i>a&&(i=a);for(var u=0;u<i;++u){var l,c,f,p,m=t[u].replace(h,"%20"),v=m.indexOf(r);v>=0?(l=m.substr(0,v),c=m.substr(v+1)):(l=m,c=""),f=decodeURIComponent(l),p=decodeURIComponent(c),s(o,f)?Array.isArray(o[f])?o[f].push(p):o[f]=[o[f],p]:o[f]=p}return o}},/*!*********************************!*\
