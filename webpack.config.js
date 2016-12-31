@@ -14,11 +14,6 @@ module.exports = {
       { test: /\.js$/, loader: 'babel!eslint', exclude: /node_modules/ },
       { test: /\.css$/, loader: 'style!css' },
     ],
-    postLoaders: [{
-      test: /\.js$/,
-      exclude: /(test|node_modules)\//,
-      loader: 'istanbul-instrumenter'
-    }],
   },
   node: {
     fs: 'empty',
